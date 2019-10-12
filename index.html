@@ -6,8 +6,10 @@
     <body>
       <h1>Hello World!</h1>
     </body>
-    <script type="text/javascript">
-      fill(100);
-      rect(0, 0, 10, 10);
-    </script>
+      <canvas id="myCanvas" width="200" height="100"></canvas>
+      <script type="text/javascript">
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillRect(100, 100, 100, 100);
+      </script>
 </html>
